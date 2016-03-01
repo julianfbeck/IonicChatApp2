@@ -62,7 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers',"firebase","ngCordova"
 })
 
 .factory("Messages", function($firebaseArray) {
-  var messages = new Firebase("https://chatapp2202.firebaseio.com/");
+  var messages = new Firebase("YourFirebaseURL");
   return $firebaseArray(messages);
 })
 .factory("menu", function($firebaseArray) {
